@@ -1,0 +1,29 @@
+<app-employeelogin></app-employeelogin>
+<body>
+ <p>Here leave application can be done after employee login</p>
+  <table>
+    <tr>
+
+    <td><label for="ltype">Leave Type</label></td>
+    <td><select id="ltype" name="ltype" >
+    <option [value]='ltype' *ngFor='let ltype of ltypes'>{{ltype}}</option>
+    </select><br><br></td>
+  </tr>
+    <tr>
+      <td>From Date</td>
+      <td> <input type="date" name="fromdate"/> </td>
+    </tr>
+
+    <tr>
+      <td>To Date</td>
+      <td> <input type="date" name="todate"/> </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td>
+        <button name="save">Save</button>
+      </td>
+    </tr>
+</table>
+</body>

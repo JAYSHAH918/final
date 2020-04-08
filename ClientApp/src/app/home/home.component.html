@@ -1,0 +1,54 @@
+
+
+<body ng-app="myApp">
+
+<form>
+  <table style="width:100%;">
+    <tr>
+      <td>Name</td>
+      <td>
+        <input type="text" name="Name" ng-model="newContact.Name"/>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Email</td>
+      <td>
+        <input type="email" name="Email" ng-model="newContact.Email"/>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Password</td>
+      <td>
+        <input type="password" name="Password" ng-model="newContact.Password"/>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Date of Joining</td>
+      <td>
+        <input type="date" name="DOJ" ng-model="newContact.DOJ"/>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Date of Birth</td>
+      <td>
+        <input type="date" name="DOB" ng-model="newContact.DOB"/>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td></td>
+      <td>
+        <input type="button" value="Save" ng-click="saveContact()" />
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+<router-outlet></router-outlet>
+

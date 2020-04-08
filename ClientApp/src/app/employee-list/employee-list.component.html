@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body ng-app="myApp">
+  
+  <table class='table'*ngIf='e1'>
+    <thead>
+      <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>DOJ</th>
+    <th>DOB</th>
+    </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor='let emp of e1'>
+        <td>{{emp.Name}}</td>
+        <td>{{emp.Email}}</td>
+        <td>{{emp.Password}}</td>
+        <td>{{emp.DOJ}}</td>
+        <td>{{emp.DOB}}</td>
+
+        <td>
+          <a href="#" ng-click="edit(emp.id)">Edit</a>
+          <a href="#" ng-click="delete(emp.id)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
